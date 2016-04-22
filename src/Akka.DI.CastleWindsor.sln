@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{49A7B7F7-A480-4590-AEA1-DE50FDBACB53}"
+	ProjectSection(SolutionItems) = preProject
+		..\build.fsx = ..\build.fsx
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.DI.CastleWindsor", "Akka.DI.CastleWindsor\Akka.DI.CastleWindsor.csproj", "{760F900D-46A0-4D9F-9CD2-637040FFBD83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.DI.CastleWindsor.Tests", "Akka.DI.CastleWindsor.Tests\Akka.DI.CastleWindsor.Tests.csproj", "{5FF3185B-D843-4E1C-8BB9-6F48F3693176}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{760F900D-46A0-4D9F-9CD2-637040FFBD83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{760F900D-46A0-4D9F-9CD2-637040FFBD83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{760F900D-46A0-4D9F-9CD2-637040FFBD83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{760F900D-46A0-4D9F-9CD2-637040FFBD83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF3185B-D843-4E1C-8BB9-6F48F3693176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF3185B-D843-4E1C-8BB9-6F48F3693176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF3185B-D843-4E1C-8BB9-6F48F3693176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF3185B-D843-4E1C-8BB9-6F48F3693176}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
