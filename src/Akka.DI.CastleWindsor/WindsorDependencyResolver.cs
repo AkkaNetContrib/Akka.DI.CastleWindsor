@@ -18,7 +18,7 @@ namespace Akka.DI.CastleWindsor
     /// Provides services to the <see cref="ActorSystem "/> extension system
     /// used to create actors using the CastleWindsor IoC container.
     /// </summary>
-    public class WindsorDependencyResolver : IDependencyResolver
+    public class WindsorDependencyResolver : IDependencyResolver, INoSerializationVerificationNeeded
     {
         private IWindsorContainer container;
         private ConcurrentDictionary<string, Type> typeCache;
