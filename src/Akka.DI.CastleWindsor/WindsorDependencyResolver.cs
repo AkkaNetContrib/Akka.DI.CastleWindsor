@@ -37,7 +37,7 @@ namespace Akka.DI.CastleWindsor
             if (system == null) throw new ArgumentNullException("system");
             if (container == null) throw new ArgumentNullException("container");
             this.container = container;
-            typeCache = new ConcurrentDictionary<string, Type>(StringComparer.InvariantCultureIgnoreCase);
+            typeCache = new ConcurrentDictionary<string, Type>(StringComparer.OrdinalIgnoreCase);
             this.system = system;
             this.system.AddDependencyResolver(this);
         }
@@ -55,7 +55,7 @@ namespace Akka.DI.CastleWindsor
                         container.
                         Kernel.
                         GetAssignableHandlers(typeof(object)).
-                        Where(handler => handler.ComponentModel.Name.Equals(actorName, StringComparison.InvariantCultureIgnoreCase)).
+                        Where(handler => handler.ComponentModel.Name.Equals(actorName, StringComparison.OrdinalIgnoreCase)).
                         Select(handler => handler.ComponentModel.Implementation).
                         FirstOrDefault());
 
